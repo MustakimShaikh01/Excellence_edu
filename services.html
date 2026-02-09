@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Excellence Education</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            border-left: 4px solid #D72638;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-icon {
+            color: #D72638;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Excellence<span style="color:#D72638;">Education</span></div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html" class="active">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 100px;">
+        <h1 style="text-align: center;">Our Educational Services</h1>
+        <p style="text-align: center; color: #6B7280; max-width: 600px; margin: 0 auto;">Comprehensive support for your
+            academic journey.</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <i data-lucide="compass" class="service-icon" width="48" height="48"></i>
+                <h3>Career Counseling</h3>
+                <p>Personalized sessions to help you identify your strengths and choose the right career path.</p>
+            </div>
+
+            <div class="service-card">
+                <i data-lucide="school" class="service-icon" width="48" height="48"></i>
+                <h3>University Admissions</h3>
+                <p>Expert assistance with application processes for top universities like Chitkara, LPU, and more.</p>
+            </div>
+
+            <div class="service-card">
+                <i data-lucide="book-open" class="service-icon" width="48" height="48"></i>
+                <h3>Course Selection</h3>
+                <p>Guidance on selecting the best undergraduate and postgraduate programs suited to your goals.</p>
+            </div>
+
+            <div class="service-card">
+                <i data-lucide="files" class="service-icon" width="48" height="48"></i>
+                <h3>Application Support</h3>
+                <p>Help with documentation, SOPs, and interview preparation to maximize your acceptance chances.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer style="margin-top: 4rem;">
+        <div class="container" style="text-align: center; padding: 2rem;">
+            <p>&copy; 2024 Excellence Education.</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script>
+</body>
+
+</html>

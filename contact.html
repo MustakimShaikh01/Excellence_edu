@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Excellence Education</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #E5E7EB;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #D72638;
+            box-shadow: 0 0 0 3px rgba(215, 38, 56, 0.1);
+        }
+
+        .contact-info-block {
+            padding: 2rem;
+            background: #F9FAFB;
+            border-radius: 12px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .info-icon {
+            color: #D72638;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Excellence<span style="color:#D72638;">Education</span></div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 100px;">
+        <h1 style="text-align: center; margin-bottom: 1rem;">Let's Start Your Journey</h1>
+        <p style="text-align: center; color: #6B7280; max-width: 600px; margin: 0 auto;">Reach out to us for any queries
+            about admissions, counseling, or career guidance.</p>
+
+        <div class="contact-container">
+            <div class="contact-info-block">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <i data-lucide="user" class="info-icon"></i>
+                    <span><strong>Mohit</strong></span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="phone" class="info-icon"></i>
+                    <span>+91 9359768168</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="map-pin" class="info-icon"></i>
+                    <span>No 1315 1st Floor, Rosewood Estate, Dera Bassi, Mohali - 140507, Punjab</span>
+                </div>
+                <div class="info-item">
+                    <i data-lucide="mail" class="info-icon"></i>
+                    <span>info@excellenceeducation.com</span>
+                </div>
+
+                <!-- Simple Map Embed (Placeholder for now) -->
+                <div
+                    style="width: 100%; height: 250px; background: #e5e7eb; border-radius: 8px; margin-top: 2rem; display: flex; align-items: center; justify-content: center; color: #6b7280;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.344662896676!2d76.8456673150824!3d30.59666798168449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f95fc764f693b%3A0x8805f87b8f05809!2sRosewood%20Estate!5e0!3m2!1sen!2sin!4v1629876543210!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can we help you?"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer style="margin-top: 4rem;">
+        <div class="container" style="text-align: center; padding: 2rem;">
+            <p>&copy; 2024 Excellence Education.</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellence Education - Empowering Your Future</title>
+    <!-- Include GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav id="navbar">
+                <div class="logo">Excellence<span style="color:#D72638;">Education</span></div>
+                <div class="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button class="btn btn-primary" onclick="window.location.href='contact.html'">Get Started</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="blob blob-1"></div>
+            <div class="container hero-content">
+                <div class="hero-text gsap-hero-reveal">
+                    <h1>We Build The <br><span>Future of Learning</span></h1>
+                    <p>Providing world-class educational guidance and connecting you with top-tier universities. Your journey to excellence starts here.</p>
+                    <div class="hero-buttons">
+                        <a href="services.html" class="btn btn-primary">Explore Courses</a>
+                        <a href="contact.html" class="btn btn-outline" style="margin-left: 10px;">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image gsap-hero-reveal">
+                    <img src="./assets/hero.png" alt="Students Learning">
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients">
+            <div class="container">
+                <div class="section-header gsap-fade-up">
+                    <h2>Our Trusted Partners</h2>
+                    <p>We collaborate with prestigious institutions to offer you the best opportunities.</p>
+                </div>
+                <!-- Using a grid for logos, but since we have a single collage image, we can also display individual names stylistically -->
+                <div class="clients-grid gsap-stagger-up">
+                    <div class="client-card">
+                        <div class="client-icon" style="color: #D72638; margin-bottom: 1rem;"><i data-lucide="graduation-cap" size="40"></i></div>
+                        <h3 class="client-name">Chitkara University</h3>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-icon" style="color: #D72638; margin-bottom: 1rem;"><i data-lucide="library" size="40"></i></div>
+                        <h3 class="client-name">Lovely Professional University (LPU)</h3>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-icon" style="color: #D72638; margin-bottom: 1rem;"><i data-lucide="book-open" size="40"></i></div>
+                        <h3 class="client-name">Chandigarh University (CU)</h3>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-icon" style="color: #D72638; margin-bottom: 1rem;"><i data-lucide="award" size="40"></i></div>
+                        <h3 class="client-name">Chandigarh Group of Colleges (CGC)</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Teaser -->
+        <section id="about" style="background-color: var(--white);">
+            <div class="container">
+                <div class="about-feature">
+                    <div class="feature-image gsap-slide-in-left">
+                        <img src="./assets/team.png" alt="Our Team">
+                    </div>
+                    <div class="feature-content gsap-slide-in-right">
+                        <h2>Why Choose Excellence Education?</h2>
+                        <p style="margin-bottom: 1.5rem; color: var(--text-light);">We are dedicated to guiding students toward their academic and professional goals with personalized counseling and support.</p>
+                        <ul style="margin-bottom: 2rem;">
+                            <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;"><i data-lucide="check-circle" color="#D72638" size="20"></i> Expert Guidance</li>
+                            <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;"><i data-lucide="check-circle" color="#D72638" size="20"></i> Top University Admissions</li>
+                            <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;"><i data-lucide="check-circle" color="#D72638" size="20"></i> Career Counseling</li>
+                        </ul>
+                        <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section style="background-color: #D72638; color: white; text-align: center;">
+             <div class="container">
+                 <h2 style="color: white; margin-bottom: 1rem;">Ready to Start Your Journey?</h2>
+                 <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Contact us today to schedule a consultation with our education experts.</p>
+                 <a href="contact.html" class="btn active" style="background: white; color: #D72638;">Contact Us Now</a>
+             </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Excellence Education</h3>
+                    <p>Empowering students to achieve their dreams through quality education and expert guidance.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4 style="color: white; margin-bottom: 1.5rem;">Contact Info</h4>
+                    <div class="contact-item">
+                        <i data-lucide="user" class="contact-icon"></i>
+                        <span>Mohit</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+91 9359768168</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <span>No 1315 1st Floor, Rosewood Estate<br>Dera Bassi, Mohali - 140507<br>Punjab</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Excellence Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
